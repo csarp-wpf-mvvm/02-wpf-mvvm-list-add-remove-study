@@ -1,6 +1,8 @@
-﻿namespace StudentProject.ViewModels
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace StudentProject.ViewModels
 {
-    public class StudentViewModel
+    public partial class StudentViewModel : ObservableObject
     {
     }
 }
