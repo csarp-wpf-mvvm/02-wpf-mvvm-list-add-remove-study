@@ -34,7 +34,11 @@
         <Label Grid.Row="4" Grid.Column="0">Évfolyam:</Label>
         <Label Grid.Row="5" Grid.Column="0">Osztály:</Label>
         <Label Grid.Row="6" Grid.Column="0">Tanulmányi szint:</Label>
-        <Button Grid.Row="7" Grid.ColumnSpan="2" Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80">Mentés</Button>
+        <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.ColumnSpan="2">
+            <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Content="Új adat" />
+            <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Content="Mentés" />
+            <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Content="Törlés"/>
+        </StackPanel>
 
         <TextBox Grid.Row="1" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding Student.LastName}"></TextBox>
         <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding Student.FirstName}"></TextBox>
