@@ -7,5 +7,10 @@ namespace StudentProject.ViewModels
     {
         [ObservableProperty]
         private Student _student;
+
+        public StudentViewModel()
+        {
+            _student = new Student();
+        }
     }
 }
