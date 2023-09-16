@@ -50,5 +50,30 @@
             <ComboBoxItem>szakmai érettségi</ComboBoxItem>
             <ComboBoxItem>szakmai vizsga</ComboBoxItem>
         </ComboBox>
+        <GroupBox Grid.Row="8" Grid.ColumnSpan="2">
+            <StackPanel Grid.Row="8" Grid.ColumnSpan="2" Margin="2 10 2 2">
+                <StackPanel Orientation="Horizontal">
+                    <Label>Vezeték név:</Label>
+                    <Label Content="{Binding Student.LastName}"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Kereszt név:</Label>
+                    <Label Content="{Binding Student.FirstName}"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Születési év:</Label>
+                    <Label Content="{Binding Student.BirthsDay}"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Évfolyam és osztály:</Label>
+                    <Label Content="{Binding Student.SchoolYear}"></Label>
+                    <Label Content="{Binding Student.SchoolClass}"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label>Tanulmányi szint:</Label>
+                    <Label Content="{Binding Student.EducationLevel}"></Label>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
