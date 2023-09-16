@@ -40,5 +40,10 @@
         <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding Student.FirstName}"></TextBox>
         <DatePicker Grid.Row="3" Grid.Column="1" Margin="2 2 2 2" SelectedDate="{Binding Student.BirthsDay}"></DatePicker>
         <xwpftk:IntegerUpDown Grid.Row="4" Grid.Column="1" Margin="2 2 100 2" Minimum="9" Maximum="14" Value="{Binding Student.SchoolYear}"></xwpftk:IntegerUpDown>
+        <StackPanel Grid.Row="5" Grid.Column="1">
+            <RadioButton GroupName="schoolclass" Margin="2 4 2 2">a  osztály</RadioButton>
+            <RadioButton GroupName="schoolclass" Margin="2 4 2 2">b  osztály</RadioButton>
+            <RadioButton GroupName="schoolclass" Margin="2 4 2 2">c  osztály</RadioButton>
+        </StackPanel>
     </Grid>
 </Window>
