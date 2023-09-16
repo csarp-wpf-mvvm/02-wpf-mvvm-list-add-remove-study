@@ -54,5 +54,6 @@
             SelectedItem="{Binding Student.EducationLevel}"
             SelectedIndex="0">
         </ComboBox>
+        <ListBox Grid.Row="8" Grid.ColumnSpan="2" Margin="2 2 2 2"/>
     </Grid>
 </Window>
