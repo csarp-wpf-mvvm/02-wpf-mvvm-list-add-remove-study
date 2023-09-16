@@ -19,6 +19,7 @@ namespace StudentProject.ViewModels
         public StudentViewModel()
         {
             _student = new Student();
+            Students.Add(new Student("Elek", "Teszt", System.DateTime.Now, 9, SchoolClassType.ClassA, ""));
         }
     }
 }
