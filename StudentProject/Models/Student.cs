@@ -32,5 +32,10 @@ namespace StudentProject.Models
             SchoolClass = SchoolClassType.ClassA;
             EducationLevel = string.Empty;
         }
+
+        public override string ToString()
+        {
+            return $"{LastName} {FirstName} ({SchoolYear}.{SchoolClass}) - ({String.Format("{0:yyyy.MM.dd.}", BirthsDay)})";
+        }
     }
 }
