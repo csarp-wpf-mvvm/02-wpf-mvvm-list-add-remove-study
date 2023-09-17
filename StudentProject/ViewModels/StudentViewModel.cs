@@ -29,5 +29,11 @@ namespace StudentProject.ViewModels
             Students.Add(newStudent);
             OnPropertyChanged(nameof(Students));
         }
+
+        [RelayCommand]
+        void DoNewStudent()
+        {
+            SelectedStudent = new Student();
+        }
     }
 }
