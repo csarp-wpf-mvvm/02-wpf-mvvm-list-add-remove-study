@@ -42,7 +42,10 @@
                 Command="{Binding DoSaveCommand}"
                 CommandParameter="{Binding SelectedStudent}"
                 />
-            <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Content="Törlés"/>
+            <Button HorizontalAlignment="Right" MinWidth="80" Content="Törlés" 
+                Command="{Binding DoRemoveCommand}"
+                CommandParameter="{Binding SelectedStudent}"
+            />
         </StackPanel>
 
         <TextBox Grid.Row="1" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding SelectedStudent.LastName}"></TextBox>
