@@ -63,6 +63,7 @@
                  Grid.ColumnSpan="2" 
                  Margin="2 2 2 2"
                  ItemsSource="{Binding Students}"
+                 SelectedItem="{Binding SelectedStudent}"
          />
     </Grid>
 </Window>
