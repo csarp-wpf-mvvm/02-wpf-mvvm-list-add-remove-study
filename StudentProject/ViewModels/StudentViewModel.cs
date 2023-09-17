@@ -35,5 +35,12 @@ namespace StudentProject.ViewModels
         {
             SelectedStudent = new Student();
         }
+
+        [RelayCommand]
+        public void DoRemove(Student studentToDelete)
+        {
+            Students.Remove(studentToDelete);
+            OnPropertyChanged(nameof(Students));
+        }
     }
 }
