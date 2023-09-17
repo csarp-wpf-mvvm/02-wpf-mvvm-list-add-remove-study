@@ -9,9 +9,6 @@ namespace StudentProject.ViewModels
     public partial class StudentViewModel : ObservableObject
     {
         [ObservableProperty]
-        private Student _student;
-
-        [ObservableProperty]
         private ObservableCollection<string> _educationLevels = new ObservableCollection<string>(new EducationLevels().AllEducationLevels);
 
         [ObservableProperty]
@@ -22,8 +19,8 @@ namespace StudentProject.ViewModels
 
         public StudentViewModel()
         {
-            _student = new Student();
-            Students.Add(new Student("Elek", "Teszt", System.DateTime.Now, 9, SchoolClassType.ClassA, ""));
+            //Students.Add(new Student("Elek", "Teszt", System.DateTime.Now, 9, SchoolClassType.ClassA, ""));
+            SelectedStudent = new Student();
         }
 
         [RelayCommand]
