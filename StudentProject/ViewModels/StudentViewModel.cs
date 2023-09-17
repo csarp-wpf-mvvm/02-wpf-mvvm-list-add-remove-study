@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using StudentProject.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,6 +21,13 @@ namespace StudentProject.ViewModels
         {
             _student = new Student();
             Students.Add(new Student("Elek", "Teszt", System.DateTime.Now, 9, SchoolClassType.ClassA, ""));
+        }
+
+        [RelayCommand]
+        public void DoSave(Student newStudent)
+        {
+            Students.Add(newStudent);
+            OnPropertyChanged(nameof(Students));
         }
     }
 }
