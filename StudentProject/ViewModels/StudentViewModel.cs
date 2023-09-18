@@ -17,7 +17,7 @@ namespace StudentProject.ViewModels
         [ObservableProperty]
         private Student _selectedStudent;
 
-        private string _selectedEducationLevel;
+        private string _selectedEducationLevel=string.Empty;
         public string SelectedEducationLevel
         {
             get => _selectedEducationLevel;
