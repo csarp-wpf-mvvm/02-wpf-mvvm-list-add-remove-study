@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using StudentProject.Models;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace StudentProject.ViewModels
 {
@@ -17,7 +17,7 @@ namespace StudentProject.ViewModels
         [ObservableProperty]
         private Student _selectedStudent;
 
-        private string _selectedEducationLevel=string.Empty;
+        private string _selectedEducationLevel;
         public string SelectedEducationLevel
         {
             get => _selectedEducationLevel;
@@ -32,6 +32,7 @@ namespace StudentProject.ViewModels
         {
             //Students.Add(new Student("Elek", "Teszt", System.DateTime.Now, 9, SchoolClassType.ClassA, ""));
             SelectedStudent = new Student();
+            SelectedEducationLevel=_educationLevels.ElementAt(0);
         }
 
         [RelayCommand]
