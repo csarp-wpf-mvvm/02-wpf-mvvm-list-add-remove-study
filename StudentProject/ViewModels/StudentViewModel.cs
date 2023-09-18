@@ -21,7 +21,12 @@ namespace StudentProject.ViewModels
         public string SelectedEducationLevel
         {
             get => _selectedEducationLevel;
-        }
+            set
+            {
+                SetProperty(ref _selectedEducationLevel, value);
+                SelectedStudent.EducationLevel = _selectedEducationLevel;
+            }
+        }    
 
         public StudentViewModel()
         {
