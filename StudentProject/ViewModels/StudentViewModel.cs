@@ -17,6 +17,12 @@ namespace StudentProject.ViewModels
         [ObservableProperty]
         private Student _selectedStudent;
 
+        private string _selectedEducationLevel;
+        public string SelectedEducationLevel
+        {
+            get => _selectedEducationLevel;
+        }
+
         public StudentViewModel()
         {
             //Students.Add(new Student("Elek", "Teszt", System.DateTime.Now, 9, SchoolClassType.ClassA, ""));
